@@ -1,9 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "SplitMaster",
+  "name": "Data Separator",
   "version": "1.0",
-  "description": "Processes rows of numbers and categorizes them into wireless, VOIP, landlines and much more.",
-  "permissions": ["storage", "identity", "identity.email"],
+  "description": "Processes rows of numbers and categorizes them into wireless, VOIP, and landlines.",
+  "permissions": [
+    "storage",
+    "identity",
+    "identity.email",
+    "alarms",
+    "notifications",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://yourdomain.com/*"
+  ],
   "action": {
     "default_popup": "popup.html"
   },
